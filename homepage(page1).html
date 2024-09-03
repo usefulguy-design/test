@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Awareness for Alpha Generations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="homepage(page1).html">Home</a></li>
+      <li><a href="health info(page2).html">Health Info</a></li>
+      <li><a href="calc (page3).html">BMI calculation</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits">Health Awareness</a></li>
+      <li class="hideOnMobile"><a href="homepage(page1).html">Home</a></li>
+      <li class="hideOnMobile"><a href="health info(page2).html">Health Info</a></li>
+      <li class="hideOnMobile"><a href="calc (page3).html">BMI calculation</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+    <main>
+      <div class="container">
+        <section id="homepage";>
+          <h1>Welcome to Health Awareness</h1>
+            <p> This website designed to calculate your BMI and will help you to understand your healthy eating habits</p>
+        </section>
+        <section id="bmi info";>
+          <h2>Description of BMI (Body Mass Index)</h2>
+          <p>Being aware of your Body Mass Index (BMI) is a key part of staying healthy. 
+            BMI is a simple way to check if your weight is in a healthy range based on your height. 
+            Knowing your BMI can help you understand if you're at risk for health issues like heart disease or diabetes. 
+            It also encourages you to make smart choices, like eating well and staying active, to keep your body in balance. 
+            While BMI is helpful, remember it’s just one piece of the puzzle and should be considered along with other health factors.</p>
+        </section>
+        <section id="healthy awareness";>
+          <h2>Healthy Awareness</h2>
+          <p>Healthy awareness is about understanding and caring for your well-being by making informed choices in your daily life. 
+            It involves being mindful of your physical, mental, and emotional health, and taking proactive steps to maintain balance and prevent illness. 
+            This means eating a nutritious diet, staying active, getting enough sleep, managing stress, and seeking regular medical check-ups. 
+            It’s also about recognizing when something feels off and knowing when to seek help. 
+            By staying aware and educated about your health, you can lead a more fulfilling life and reduce the risk of developing chronic conditions.</p>
+        </section>
+      </div>
+      
+        <img src="bmi.jpeg" alt="bmi image">
+      </main>
+</body>
+</html>

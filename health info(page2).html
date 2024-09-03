@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Health Awareness for Alpha Generations</title>
+            <style>
+                body
+                {
+                    font-family: Arial;
+                    margin: 20px;
+                    /*text-align: center ;*/
+                    line-height: 1.6;
+                    margin: 0;
+                    padding: 0;
+                    background-color: bisque;
+                }
+               .container {
+                    width: 80%;
+                    margin: auto;
+                    overflow: hidden;
+               }
+               h1,h2,h3 {
+                    color:#35424a;
+               }
+               section {
+                    margin-bottom: 20px;
+                    background: white;
+                    padding: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10p rgba(0, 0, 0, 0.1);
+               }
+                
+            </style>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Health Awareness for Alpha Generations</title>
+            <link rel="stylesheet" href="style_page2.css">
+        </head>
+            <body>
+
+                <nav>
+                    <ul class="sidebar">
+                      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                      <li><a href="homepage(page1).html">home</a></li>
+                      <li><a href="health info(page2).html">health info</a></li>
+                      <li><a href="calc (page3).html">BMI calculation</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits">Health Awareness</a></li>
+                      <li class="hideOnMobile"><a href="homepage(page1).html">Home</a></li>
+                      <li class="hideOnMobile"><a href="health info(page2).html">Health Info</a></li>
+                      <li class="hideOnMobile"><a href="calc (page3).html">BMI Calculation</a></li>
+                      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                    </ul>
+                  </nav>
+                
+                  <script>
+                    function showSidebar(){
+                      const sidebar = document.querySelector('.sidebar')
+                      sidebar.style.display = 'flex'
+                    }
+                    function hideSidebar(){
+                      const sidebar = document.querySelector('.sidebar')
+                      sidebar.style.display = 'none'
+                    }
+                  </script>
+
+                <div class="container">
+                    <section id="nutrition">
+                        <h2>Nutrition Tips</h2>
+                        <h3>Balanced Diet</h3>
+                        <p>Incorporate a variety of food groups including fruits, vegetables, whole grains, lean proteins, and healthy fats.</p>
+            
+                        <h3>Hydration</h3>
+                        <p>Drink enough water daily to stay hydrated and support bodily functions.</p>
+            
+                        <h3>Meal Planning</h3>
+                        <p>Plan meals ahead of time, focus on portion control, and avoid processed foods.</p>
+            
+                        <h3>Special Diets</h3>
+                        <p>Considerations for vegetarian, vegan, gluten-free, or low-carb diets.</p>
+                    </section>
+
+                    <section id="exercise">
+                        <h2>Exercise Tips</h2>
+                        <h3>Regular Physical Activity</h3>
+                        <p>Aim for at least 30 minutes of moderate exercise most days of the week, such as walking, swimming, or cycling.</p>
+                        
+                        <h3>Strength Training</h3>
+                        <p>Incorporate strength training to build muscle and bone density.</p>
+                        
+                        <h3>Flexibility and Stretching</h3>
+                        <p>Stretch regularly to improve flexibility and reduce the risk of injury.</p>
+                        
+                        <h3>Exercise for Specific Conditions</h3>
+                        <p>Exercise suggestions tailored for individuals with specific conditions like arthritis, diabetes, or heart disease.</p>
+                    </section>
+
+                    <section id="health issues">
+                        <h2>Common Health Issues</h2>
+                        <h3>Managing Stress</h3>
+                        <p>Use mindfulness, meditation, and breathing exercises to manage stress.</p>
+            
+                        <h3>Sleep Hygiene</h3>
+                        <p>Establish good sleep habits and improve sleep quality.</p>
+            
+                        <h3>Cold and Flu Prevention</h3>
+                        <p>Prevent and manage common illnesses like colds and the flu with proper hygiene and care.</p>
+            
+                        <h3>Chronic Disease Management</h3>
+                        <p>Manage chronic conditions such as hypertension, diabetes, and high cholesterol through lifestyle changes.</p>
+                    </section>
+                </div>
+                
+            </body>
+</html>
